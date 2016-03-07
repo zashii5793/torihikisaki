@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# coding: utf-8
+
+Shiire.create(
+    :kai_code => "200",
+    :sir_code => "99999",
+    :sir_name => "ZashiCompany"
+	)

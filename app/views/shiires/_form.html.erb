@@ -1,0 +1,29 @@
+<%= form_for(@shiire) do |f| %>
+  <% if @shiire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shiire.errors.count, "error") %> prohibited this shiire from being saved:</h2>
+
+      <ul>
+      <% @shiire.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :kai_code %><br>
+    <%= f.text_field :kai_code %>
+  </div>
+  <div class="field">
+    <%= f.label :sir_code %><br>
+    <%= f.text_field :sir_code %>
+  </div>
+  <div class="field">
+    <%= f.label :sir_name %><br>
+    <%= f.text_field :sir_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

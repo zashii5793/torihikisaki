@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kai_code: MyString
+  sir_code: MyString
+  sir_name: MyString
+
+two:
+  kai_code: MyString
+  sir_code: MyString
+  sir_name: MyString

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kai code:</strong>
+  <%= @shiire.kai_code %>
+</p>
+
+<p>
+  <strong>Sir code:</strong>
+  <%= @shiire.sir_code %>
+</p>
+
+<p>
+  <strong>Sir name:</strong>
+  <%= @shiire.sir_name %>
+</p>
+
+<%= link_to 'Edit', edit_shiire_path(@shiire) %> |
+<%= link_to 'Back', shiires_path %>
