@@ -12,3 +12,27 @@ Shiire.create(
     :sir_code => "99999",
     :sir_name => "ZashiCompany"
 	)
+
+Shiire.create(
+    :kai_code => "200",
+    :sir_code => "88888",
+    :sir_name => "8Company"
+	)
+
+Shiire.create(
+    :kai_code => "200",
+    :sir_code => "77777",
+    :sir_name => "7Company"
+	)
+
+Shiire.create(
+    :kai_code => "200",
+    :sir_code => "66666",
+    :sir_name => "6Company"
+	)
+
+Shiire.create(
+    :kai_code => "200",
+    :sir_code => "55555",
+    :sir_name => "5Company"
+	)
