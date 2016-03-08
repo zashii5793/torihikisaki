@@ -5,6 +5,8 @@ class ShiiresController < ApplicationController
   # GET /shiires.json
   def index
     @shiires = Shiire.all
+    @q = Shiire.ransack(params[:q])
+    @shiires = @q.result
   end
 
   # GET /shiires/1
