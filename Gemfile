@@ -44,8 +44,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'therubyracer', platforms: :ruby
+if RUBY_PLATFORM =~ /mingw/
+  # pathでの設定はGemfileを基準とした相対パスでないと
+  # うまくいきませんでしたので、以下のようになります
+  gem 'therubyracer', :path => '../therubyracer-0.11.0beta1-x86-mingw32'
+else
+  gem 'libv8'
+  gem 'therubyracer'
+end
+gem 'less'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails' # Bootstrapの本体
 gem 'ransack'
